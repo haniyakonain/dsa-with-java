@@ -21,6 +21,7 @@ accessed using an index or position number<br>
 but in java we dont have dynamic array,
 <br> we have ArrayList class from the java.util package,
 <br> which functions as a dynamic array<br>
+Memory=Size×Data Type<br>
 
 <h3>Common Operations<br></h3>
 Getting Length: <br>
@@ -54,7 +55,6 @@ Heap<br>
 May use more memory than static arrays (due to resizing)<br>
 Direct index-based access<br>
 Contiguous memory<br>
-Memory=Size×Data Type<br>
 <h3>Dynamic Array Syntax<br></h3>
 // Importing ArrayList class<br>
 import java.util.ArrayList;<br>
