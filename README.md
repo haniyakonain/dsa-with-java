@@ -83,3 +83,27 @@ int[][] matrix = {<br>
 int[][] matrix = new int[1][1]; <br>
 // Initializing elements<br>
 matrix[0][0] = 1;<br>
+
+operations on arrays<br>
+
+Insert: Add an element at a specified position in the array.<br>
+Delete: Remove an element from a specific position in the array.<br>
+Search: Find the position of a specific element within the array.<br>
+Sort: Arrange the elements of the array in a specific order (ascending or descending)<br>
+Merge: Combine two or more arrays into a single array.<br>
+Split: Divide an array into two or more smaller arrays.<br>
+Traverse: Visit each element of the array, typically for processing or displaying.<br>
+Reverse: Change the order of elements in the array to the opposite sequence.<br>
+Map: Apply a function to each element of the array, creating a new array with the results.<br>
+Filter: Create a new array containing only elements that meet a specified condition.<br>
+Reduce: Combine all elements of the array into a single value using a specified function.<br>
+Concat: Join two or more arrays together to form a single array.<br>
+Slice: Extract a portion of the array, creating a new array from a specified range.<br>
+Initialize: Set the initial values of the array elements upon creation.<br>
+Access: Retrieve the value of an element at a specified index in the array.<br>
+
+Time complexity<br>
+
+Insertions: O(n)<br>
+Deletions: O(n)<br>
+Searches: O(n) (or O(log n) for binary search in sorted arrays)<br>
