@@ -165,6 +165,6 @@ System.out.print("Elements: ");
 - remove() - removes current element
 - example- it → null → 1 → 2 → 3
    it.next() will give 1 then 2 then 3
-   it.hasnext() will trurn true or false so true, true, true, false
+   it.hasnext() will return true or false so true, true, true, false
 
   ## HASHMAP
