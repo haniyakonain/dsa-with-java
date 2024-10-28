@@ -11,7 +11,7 @@ Distributed<br>
 Dynamic<br>
 Platform-independent<br><br>
 
-<h2>ARRAYS</h2>
+## ARRAYS
 non premetive data type<br>
 a data structure in general<br>
 collection of items (elements) <br>
@@ -107,3 +107,64 @@ Time complexity<br>
 Insertions: O(n)<br>
 Deletions: O(n)<br>
 Searches: O(n) (or O(log n) for binary search in sorted arrays)<br>
+
+## HASHSET
+
+- unique values
+- doesn't allow duplicates
+- not ordered (elements are not stored in insertion order)
+- allows null value
+- time complexity
+- insert,search,delete - O(1)
+
+syntax-
+HashSet<DataType> setName = new HashSet<>();
+
+Can't use primitive types directly (use wrapper classes instead)
+ Use `Integer` instead of `int`
+ Use `Double` instead of `double`
+
+//Create
+HashSet<Integer> set = new HashSet<>();
+
+// Insert “add” to insert value*
+set.add(10);
+set.add(20);
+set.add(10); *// won't add duplicate*
+
+// for search we use “contains” that returns true if value exists 
+// and false if it doesnt*
+if(numbers.contains(num)) {
+System.out.println(num + " found in the set!");
+
+//to delete we use “remove”
+ set.remove(10);
+
+//size
+System.out.println("Size: " + set.size());
+
+//Print all elements*
+// Method 1: Direct print
+System.out.println("Set: " + set);
+// Set: [20, 10, 30]*
+
+//  Method 2: For each loop*
+System.out.print("Elements: ");
+       for(int num : set) {
+           System.out.print(num + " ");
+// Elements: 20 10 30**
+
+ iterator
+- it is a method
+- iterator because no index of set
+ Iterator it = set.iterator();
+ while(it.hasNext())
+  System.out.print(it.next() + " ");
+- hasNext() - checks if more elements exist
+- next() - gets next element
+- remove() - removes current element
+- example- it → null → 1 → 2 → 3
+   it.next() will give 1 then 2 then 3
+   it.hasnext() will trurn true or false so true, true, true, false
+
+  ## HASHMAP
