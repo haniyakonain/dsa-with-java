@@ -258,7 +258,7 @@ for (Integer value : map.values()) {<br>
 Java 8 introduced the forEach method in Map, which allows you to iterate using lambda expressions<br>
 map.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));<br>
 
-</h4>5. Using an Iterator</h4>
+<h4> 5. Using an Iterator</h4>
 You can also use an Iterator with entrySet to iterate over key-value pairs<br> This method is useful if you need to modify the map during iteration<br>
 import java.util.Iterator;<br>
 Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();<br>
