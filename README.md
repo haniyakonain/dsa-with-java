@@ -114,7 +114,7 @@ Extract a portion of the array, creating a new array from a specified range.<br>
 <h4>Initialize:</h4>
 Set the initial values of the array elements upon creation.<br>
 <h4>Access:</h4>
-Retrieve the value of an element at a specified index in the array.<br>
+Retrieve the value of an element at a specified index in the array.<br><br>
 
 <h3>Time complexity</h3>
 <h4>Insertions:</h4> O(n)<br>
@@ -258,7 +258,7 @@ for (Integer value : map.values()) {<br>
 Java 8 introduced the forEach method in Map, which allows you to iterate using lambda expressions<br>
 map.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));<br>
 
-/h4>5. Using an Iterator</h4>
+</h4>5. Using an Iterator</h4>
 You can also use an Iterator with entrySet to iterate over key-value pairs<br> This method is useful if you need to modify the map during iteration<br>
 import java.util.Iterator;<br>
 Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();<br>
