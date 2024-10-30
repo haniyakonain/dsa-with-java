@@ -86,35 +86,35 @@ matrix[0][0] = 1;<br>
 
 <h3>operations on arrays</h3><br>
 
-<h4>Insert: </h4><br>
+<h4>Insert: </h4>
 Add an element at a specified position in the array.<br>
-<h4>Delete:</h4><br>
+<h4>Delete:</h4>
 Remove an element from a specific position in the array.<br>
-<h4>Search:</h4><br>
+<h4>Search:</h4>
 Find the position of a specific element within the array.<br>
-<h4>Sort:</h4><br>
+<h4>Sort:</h4>
 Arrange the elements of the array in a specific order (ascending or descending)<br>
-<h4>Merge:</h4><br>
+<h4>Merge:</h4>
 Combine two or more arrays into a single array.<br>
-<h4>Split:</h4><br>
+<h4>Split:</h4>
 Divide an array into two or more smaller arrays.<br>
-<h4>Traverse:</h4><br>
+<h4>Traverse:</h4>
 Visit each element of the array, typically for processing or displaying.<br>
-<h4>Reverse:</h4><br>
+<h4>Reverse:</h4>
 Change the order of elements in the array to the opposite sequence.<br>
-<h4>Map:</h4><br>
+<h4>Map:</h4>
 Apply a function to each element of the array, creating a new array with the results.<br>
-<h4>Filter:</h4><br>
+<h4>Filter:</h4>
 Create a new array containing only elements that meet a specified condition.<br>
-<h4>Reduce:</h4><br>
+<h4>Reduce:</h4>
 Combine all elements of the array into a single value using a specified function.<br>
-<h4>Concat:</h4><br>
+<h4>Concat:</h4>
 Join two or more arrays together to form a single array.<br>
-<h4>Slice:</h4><br>
+<h4>Slice:</h4>
 Extract a portion of the array, creating a new array from a specified range.<br>
-<h4>Initialize:</h4><br>
+<h4>Initialize:</h4>
 Set the initial values of the array elements upon creation.<br>
-<h4>Access:</h4><br>
+<h4>Access:</h4>
 Retrieve the value of an element at a specified index in the array.<br>
 
 <h3>Time complexity<br></h3>
