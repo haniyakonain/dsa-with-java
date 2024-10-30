@@ -23,12 +23,12 @@ but in java we dont have dynamic array,
 <br> which functions as a dynamic array<br>
 Memory=Size×Data Type<br>
 
-<h3>Common Operations<br></h3>
+<h3>Common Operations</h3>
 Getting Length: <br>
 Use .length to get the size of the array.<br>
 int length = numbers.length; <br>
 
-<h3>Looping Through an Array:<br></h3>
+<h3>Looping Through an Array:</h3>
 for (int i = 0; i < numbers.length; i++){ <br>
     System.out.println(numbers[i]);<br>
 }<br>
@@ -40,10 +40,10 @@ Fixed size<br>
 Size is set at creation<br>
 Direct index-based access<br>
 Contiguous memory<br>
-<h3>Static Array Syntax<br></h3>
+<h3>Static Array Syntax</h3>
 // Syntax for declaring and initializing a static array<br>
 type[] arrayName = new type[size];<br>
-<h3>Example:<br></h3>
+<h3>Example:</h3>
 int[] staticArray = new int[5];<br>
 // A static array of integers with size 5<br>
 
@@ -55,25 +55,25 @@ Heap<br>
 May use more memory than static arrays (due to resizing)<br>
 Direct index-based access<br>
 Contiguous memory<br>
-<h3>Dynamic Array Syntax<br></h3>
+<h3>Dynamic Array Syntax</h3>
 // Importing ArrayList class<br>
 import java.util.ArrayList;<br>
 // Syntax for declaring and initializing a dynamic array<br>
 ArrayList<type> arrayName = new ArrayList<>();<br>
-<h3>Example:<br></h3>
+<h3>Example:</h3>
 ArrayList<Integer> dynamicArray = new ArrayList<>();<br>
 // A dynamic array of integers<br>
 dynamicArray.add(10);  // Adding elements dynamically<br>
 dynamicArray.add(20);<br>
 
-<h3>2D array<br></h3>
+<h3>2D array</h3>
 an array of arrays<br>
 grid or matrix format<br>
 Memory=Rows×Columns×Data Type Size+Overhead<br>
 overhead refers to the extra memory<br>
-<h3>Declaring a 2D Array<br></h3>
+<h3>Declaring a 2D Array</h3>
 type[][] arrayName;<br>
-<h3>Initializing a 2D Array<br></h3>
+<h3>Initializing a 2D Array</h3>
 int[][] matrix = {<br>
     {1, 2, 3},<br>
     {4, 5, 6},<br>
@@ -84,8 +84,7 @@ int[][] matrix = new int[1][1]; <br>
 // Initializing elements<br>
 matrix[0][0] = 1;<br>
 
-<h3>operations on arrays</h3><br>
-
+<h3>operations on arrays</h3>
 <h4>Insert: </h4>
 Add an element at a specified position in the array.<br>
 <h4>Delete:</h4>
@@ -117,7 +116,7 @@ Set the initial values of the array elements upon creation.<br>
 <h4>Access:</h4>
 Retrieve the value of an element at a specified index in the array.<br>
 
-<h3>Time complexity<br></h3>
+<h3>Time complexity</h3>
 <h4>Insertions:</h4> O(n)<br>
 <h4>Deletions: </h4>O(n)<br>
 <h4>Searches: </h4>O(n) (or O(log n) for binary search in sorted arrays)<br>
@@ -131,32 +130,32 @@ allows null value<br>
 time complexity<br>
 insert,search,delete - O(1)<br>
 
-<h3>syntax-<br></h3>
+<h3>syntax-</h3>
 HashSet<DataType> setName = new HashSet<>();<br>
 Can't use primitive types directly (use wrapper classes instead)<br>
 Use Integer instead of int<br>
 Use Double instead of double<br>
 
-<h3>Create</h3><br>
+<h3>Create</h3>
 HashSet<Integer> set = new HashSet<>();<br>
 
-<h3>Insert “add” to insert value</h3><br>
+<h3>Insert “add” to insert value</h3>
 set.add(10);<br>
 set.add(20);<br>
 set.add(10); // won't add duplicate<br>
 
 <h3>for search we use “contains” that returns true if value exists <br>
-and false if it doesnt</h3><br>
+and false if it doesnt</h3>
 if(numbers.contains(num)) {<br>
 System.out.println(num + " found in the set!");<br>
 
-<h3>to delete we use “remove”</h3><br>
+<h3>to delete we use “remove”</h3>
  set.remove(10);<br>
 
-<h3>size</h3>br>
+<h3>size</h3>
 System.out.println("Size: " + set.size());<br>
 
-<h3>Print all elements</h3><br>
+<h3>Print all elements</h3>
 // Method 1: Direct print<br>
 System.out.println("Set: " + set);<br>
 // Set: [20, 10, 30]<br>
@@ -167,19 +166,19 @@ System.out.print("Elements: ");<br>
            System.out.print(num + " ");<br>
 // Elements: 20 10 30<br>
 
- <h3>iterator</h3><br>
+ <h3>iterator</h3>
 it is a method<br>
 iterator because no index of set<br>
 Iterator it = set.iterator();<br>
 while(it.hasNext())<br>
 System.out.print(it.next() + " ");<br>
-<h3>hasNext()</h3> <br>
+<h3>hasNext()</h3>
 checks if more elements exist<br>
 <h3>next()</h3>
 gets next element<br>
-<h3>remove() </h3> <br>
+<h3>remove() </h3>
 removes current element<br>
-<h3>example</h3><br>
+<h3>example</h3>
 it → null → 1 → 2 → 3<br>
    it.next() will give 1 then 2 then 3<br>
    it.hasnext() will return true or false so true, true, true, false<br>
@@ -190,24 +189,24 @@ keys and values<br>
 keys should be unique, value may or may not be unique<br>
 not ordered (elements are not stored in insertion order)<br>
 
-<h3>create<br></h3>
+<h3>create</h3>
 syntax-<br>
 HashMap<Key DataType, Value DataType> mapName = new HashMap<>();<br>
 
-<h3> insert<br></h3>
+<h3> insert</h3>
 2 cases<br>
 1. exist - update<br>
 2. does not exists - insert new pair<br>
 
-<h3> Insert “put” to insert value<br></h3>
+<h3> Insert “put” to insert value</h3>
 set.put("India", 10);<br>
 set.put("China", 20);<br>
 set.put("US", 10);<br>
 
-<h3>Updating value<br></h3>
+<h3>Updating value</h3>
 set.put("US", 40);<br>
 
-<h3>search / lookup<br></h3>
+<h3>search / lookup</h3>
 .put<br>
 checks if a particular key exists within the HashMap<br>
 map.put("Apple", 10);<br>
@@ -219,14 +218,14 @@ System.out.println("Apple is not in the map.");<br>
 Output<br>
 Apple is in the map with quantity: 10<br>
 
-<h3> .get<br></h3>
+<h3> .get</h3>
 retrieves the value associated with a specified key<br>
 1. key exists in the map  corresponding value;<br>
 2. key doesn’t exist - null<br>
 
-<h3>To iterate , there are several common methods<br></h3>
+<h3>To iterate , there are several common methods</h3>
 
-<h4>1. Iterating Over Entry Set (Recommended for both keys and values)</h4><br>
+<h4>1. Iterating Over Entry Set (Recommended for both keys and values)</h4>
 Using the entrySet method provides access to both the keys and values in each iteration<br>
 import java.util.HashMap;<br>
 import java.util.Map;<br>
@@ -243,23 +242,23 @@ public class HashMapIterationExample {<br>
     }<br>
 }<br>
 
-<h4>2. Iterating Over Keys Only<br></h4>
+<h4>2. Iterating Over Keys Only</h4>
 If you need only the keys, you can use the keySet method<br>
 for (String key : map.keySet()) {<br>
     System.out.println("Key: " + key);<br>
 }<br>
 
-<h4>3. Iterating Over Values Only<br></h4>
+<h4>3. Iterating Over Values Only</h4>
 If you’re only interested in values, use the values method<br>
 for (Integer value : map.values()) {<br>
     System.out.println("Value: " + value);<br>
 }<br>
 
-<h4> 4. Using forEach with Lambda (Java 8 and above)<br></h4>
+<h4> 4. Using forEach with Lambda (Java 8 and above)</h4>
 Java 8 introduced the forEach method in Map, which allows you to iterate using lambda expressions<br>
 map.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));<br>
 
-/h4>5. Using an Iterator<br></h4>
+/h4>5. Using an Iterator</h4>
 You can also use an Iterator with entrySet to iterate over key-value pairs<br> This method is useful if you need to modify the map during iteration<br>
 import java.util.Iterator;<br>
 Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();<br>
@@ -268,7 +267,7 @@ while (iterator.hasNext()) {<br>
     System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());<br>
 }<br>
 
-<h3>remove<br></h3>
+<h3>remove</h3>
 //syntax- mapName.remove(”key”);<br>
 map.remove(”US”);<br>
 so value will also be deleted<br>
