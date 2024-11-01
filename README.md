@@ -272,48 +272,48 @@ while (iterator.hasNext()) {<br>
 map.remove(”US”);<br>
 so value will also be deleted<br>
 
-Put( )
-Exist-update
-Not exist- new key value
-Get( )
-Exist- gives value
-Not exist- null
-Contains( )
-Exist- true
-Not exist- False
-Remove( )
-Exist- remove
-Not exist- null
-Size( )
-Keyset( )
+Put( )<br>
+Exist-update<br>
+Not exist- new key value<br>
+Get( )<br>
+Exist- gives value<br>
+Not exist- null<br>
+Contains( )<br>
+Exist- true<br>
+Not exist- False<br>
+Remove( )<br>
+Exist- remove<br>
+Not exist- null<br>
+Size( )<br>
+Keyset( )<br>
 
-Hashmap implementation 
-Array of linked list
-We have array index and data index starting from 0 
-Index is called bucket in hashmap 
-Last value is null
-n (node) 
-N (array_size)
+<h3>Hashmap implementation</h3> 
+Array of linked list<br>
+We have array index and data index starting from 0 <br>
+Index is called bucket in hashmap <br>
+Last value is null<br>
+n (node) <br>
+N (array_size)<br>
 
-Hashing 
-Changing data format 
-Ex companies use it to save password
+<h3>Hashing</h3>
+Changing data format <br>
+Ex- companies use it to save password<br>
 
-Input -> hash function -> output 
+Input -> hash function -> output<br> 
         (Hash code)
-Key -> hash function -> bucket index (o to n-1)
+Key -> hash function -> bucket<br> index (o to n-1)<br>
 
-Linked list size is lambda
-O( linked list ) to put
-n/N lambda
-Lamda is constant value
-Lamda <= k
-K is constant or threshold value
-If Lamda increases we use rehashing to decrease it than k value 
-So we double the N (array_size) value
-Bucket index might change
-Worst case - O(n)
-Average case - O(lambda)
-Best case - O(1)
+Linked list size is lambda<br>
+O( linked list ) to put<br>
+n/N lambda<br>
+Lamda is constant value<br>
+Lamda <= k<br>
+K is constant or threshold value<br>
+If Lamda increases we use<br> rehashing to decrease it than k value<br> 
+So we double the N (array_size) value<br>
+Bucket index might change<br>
+Worst case - O(n)<br>
+Average case - O(lambda)<br>
+Best case - O(1)<br>
 
 
