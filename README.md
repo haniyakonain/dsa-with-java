@@ -271,3 +271,49 @@ while (iterator.hasNext()) {<br>
 //syntax- mapName.remove(”key”);<br>
 map.remove(”US”);<br>
 so value will also be deleted<br>
+
+Put( )
+Exist-update
+Not exist- new key value
+Get( )
+Exist- gives value
+Not exist- null
+Contains( )
+Exist- true
+Not exist- False
+Remove( )
+Exist- remove
+Not exist- null
+Size( )
+Keyset( )
+
+Hashmap implementation 
+Array of linked list
+We have array index and data index starting from 0 
+Index is called bucket in hashmap 
+Last value is null
+n (node) 
+N (array_size)
+
+Hashing 
+Changing data format 
+Ex companies use it to save password
+
+Input -> hash function -> output 
+        (Hash code)
+Key -> hash function -> bucket index (o to n-1)
+
+Linked list size is lambda
+O( linked list ) to put
+n/N lambda
+Lamda is constant value
+Lamda <= k
+K is constant or threshold value
+If Lamda increases we use rehashing to decrease it than k value 
+So we double the N (array_size) value
+Bucket index might change
+Worst case - O(n)
+Average case - O(lambda)
+Best case - O(1)
+
+
