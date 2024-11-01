@@ -270,7 +270,7 @@ while (iterator.hasNext()) {<br>
 <h3>remove</h3>
 //syntax- mapName.remove(”key”);<br>
 map.remove(”US”);<br>
-so value will also be deleted<br>
+so value will also be deleted<br><br>
 
 Put( )<br>
 Exist-update<br>
