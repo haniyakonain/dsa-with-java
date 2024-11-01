@@ -299,9 +299,8 @@ N (array_size)<br>
 Changing data format <br>
 Ex- companies use it to save password<br>
 
-Input -> hash function -> output<br> 
-        (Hash code)
-Key -> hash function -> bucket<br> index (o to n-1)<br>
+Input -> hash function (Hash code) -> output<br>       
+Key -> hash function (Hash code)-> bucket<br> index (o to n-1)<br>
 
 Linked list size is lambda<br>
 O( linked list ) to put<br>
