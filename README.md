@@ -441,6 +441,7 @@ Understanding the performance of an algorithm is critical.
 
 ---
 
+## **6. Resources for Learning DSA**
 
 ### **Online Platforms**:
 - **LeetCode**: Best for interview preparation.
