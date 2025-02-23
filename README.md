@@ -15,6 +15,7 @@ Platform-independent<br><br>
 non premetive data type<br>
 a data structure in general<br>
 collection of items (elements) <br>
+linear fashion memory allocation  <br>
 contiguous memory locations<br>
 accessed using an index or position number<br>
 2 types that is static and dynamic <br>
@@ -22,14 +23,18 @@ but in java we dont have dynamic array,
 <br> we have ArrayList class from the java.util package,
 <br> which functions as a dynamic array<br>
 Memory=Size×Data Type<br>
+if size is know then  <br>
+type [] = arrayName = {1,2,3}:  <br>
+automatic initialization with null value  <br>
 
 <h3>Common Operations</h3>
 Getting Length: <br>
 Use .length to get the size of the array.<br>
 int length = numbers.length; <br>
+//length variable = size store <br>
 
 <h3>Looping Through an Array:</h3>
-for (int i = 0; i < numbers.length; i++){ <br>
+for (int i = 0; i < numbers.length; i++){       <br>
     System.out.println(numbers[i]);<br>
 }<br>
 
