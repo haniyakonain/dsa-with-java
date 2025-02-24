@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class find {
     public static void main(String[] args) {
-        Scanner sc = new Scanner (System.in);
+        Scanner sc = new Scanner (System.in); //object
         int size = sc.nextInt();
         int arr [] = new int [size];
        //input 
