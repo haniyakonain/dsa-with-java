@@ -163,7 +163,7 @@ System.out.println("Size: " + set.size());<br>
 <h3>Print all elements</h3>
 // Method 1: Direct print<br>
 System.out.println("Set: " + set);<br>
-// Set: [20, 10, 30]<br>
+// Set: [20, 10, 30] <br>
 
 //  Method 2: For each loop<br>
 System.out.print("Elements: ");<br>
