@@ -9,5 +9,7 @@ public class ternary {
         type variable name = condition? stm1(true) : stm2(false); */
    String var = (x % 2 == 0) ? "Even" : "Odd";
     System.out.println(var);
+    sc.close();
+
     }
 }
