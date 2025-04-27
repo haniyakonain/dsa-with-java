@@ -20,6 +20,8 @@ int [][] numbers= new int [rows][cols];
     }
     System.out.println();
 }
+sc.close();
+
     }
     
 }

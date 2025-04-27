@@ -26,7 +26,3 @@ public class TwoSum {  // Note: filename should be TwoSum.java
         System.out.println(result[0] + " " + result[1]);
     }
 }
-
-algotithm <br>
-    understand the question  <br>
-    
