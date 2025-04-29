@@ -12,6 +12,8 @@
 - **Dynamic**
 - **Platform-Independent**
 
+basics
+
 ---
 
 # Arrays in Java
