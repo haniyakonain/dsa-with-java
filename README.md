@@ -11,8 +11,181 @@
 - **Distributed**
 - **Dynamic**
 - **Platform-Independent**
+- **typed language**
 
-basics
+## Programming Basics
+
+### Escape Sequences
+
+| Language | Syntax Example                | Description         |
+|----------|-------------------------------|---------------------|
+| Bash     | `echo -e "Hello\nWorld"`      | Enables escapes     |
+| Java     | `System.out.println("Hello\nWorld");` | `\n` = newline |
+| JavaScript | `console.log("Hello\\nWorld");` | Escapes in strings  |
+
+---
+
+### Flowchart Symbols
+
+| Symbol        | Meaning             |
+|---------------|---------------------|
+| Circle        | Start / End         |
+| Diamond       | Decision (if/else)  |
+| Parallelogram | Input / Output      |
+| Square        | Process / Operation |
+
+---
+
+### Pseudocode
+
+Pseudocode is a human-readable way to describe an algorithm before actual coding.
+
+---
+
+## Simple Interest
+
+**Formula:**
+
+```
+SI = (P × R × T) / 100
+```
+
+- `P`: Principal amount  
+- `R`: Rate of interest  
+- `T`: Time (in years)
+
+---
+
+## Area Calculation
+
+area of a circle:
+
+```
+Area = π × r × r
+```
+
+the formula `(3/4) * rad + rad` 
+
+```
+float rad = 5;
+float result = (3.0f / 4.0f) * rad + rad;
+System.out.println("Result: " + result);
+```
+
+---
+
+## Sum of First N Natural Numbers
+
+**Formula:**
+```
+Sum = n × (n + 1) / 2
+```
+
+**Example:**
+```
+int n = 4;
+int sum = n * (n + 1) / 2;
+System.out.println("Sum: " + sum); // Output: 10
+```
+
+---
+
+## Methods in Java
+
+A **method** is similar to a function but is defined inside a class. It can be:
+
+- **Called using an object**, or
+- **Called directly if static**
+
+**Example:**
+```
+public class MyClass {
+    void greet() {
+        System.out.println("Hello");
+    }
+
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.greet();
+    }
+}
+```
+
+---
+
+## Literals
+
+Literals are fixed values assigned directly to variables. Examples:
+
+```java
+int num = 10;       // integer literal
+float pi = 3.14f;   // float literal
+char letter = 'A';  // character literal
+String name = "Java"; // string literal
+```
+
+---
+
+## Identifiers
+
+Identifiers are the **names** used for classes, variables, methods, etc. in Java. They must follow Java naming conventions.
+
+---
+
+## Type Conversion
+
+**Implicit (Widening) Conversion** happens when a smaller data type is assigned to a larger type:
+
+```java
+int a = 25;
+long b = a;
+```
+
+**Hierarchy:**
+```
+byte → short → int → float → long → double
+```
+
+**Note:** Going from a larger type to a smaller type may result in **lossy conversion**.
+
+---
+
+## Type Casting
+
+**Explicit (Narrowing) Conversion** using type casting:
+
+```java
+float a = 25.34f;
+int b = (int) a; // b = 25
+```
+
+---
+
+## Type Promotion in Expressions
+
+Java promotes `byte`, `short`, and `char` to `int` in arithmetic expressions.
+
+```java
+byte a = 10;
+byte b = 20;
+// byte c = a + b; // Error
+int c = a + b;     // Correct
+```
+
+---
+
+## Ternary Operator
+
+Used to assign a value based on a condition in a single line:
+
+```java
+int max = (a > b) ? a : b;
+```
+
+Syntax:
+```
+condition ? expression_if_true : expression_if_false;
+```
 
 ---
 
