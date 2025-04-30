@@ -9,13 +9,13 @@ public class reverse_num {
      }
      System.out.println(); */
     // to save and print original number 
-    int num = 56789;
+    int num = 234567;
     int rev = 0;
-    while (num > 0) {
-    int lastdigit = num % 10;
-    rev = ( rev * 10 ) + lastdigit;
-    num /= 10;
-    System.out.println(rev);
+    while (num > 0 ) {
+      int lastdigit = num % 10;
+      rev = (rev * 10) + lastdigit;
+      num /= 10;
     }
+    System.out.println(rev);
     }
 }
