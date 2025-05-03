@@ -15,9 +15,8 @@ public class product {
   // to find factorial
  public static int fact(int n) {
     int f = 1;
-
-    for (int i = 1; i <= n; i++){
-        f = f * i;
+    for (int i=1; i <= n; i++){
+    f = n * i;
     }
     return f;
  }
@@ -51,28 +50,41 @@ public class product {
     return sum;
  }*/
 
-public static boolean isprime(int n) {
-    if (n == 2) {
-    return true;
-    }
-    
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0){
-                return false;
+    public static boolean isprime(int n) {
+        if (n == 2) {
+            return true;
+        }
+        for ( int i = 2; i <= Math.sqrt(n); i++ ) {
+            if (n % i == 0) {
+               return false;
             }
         }
         return true;
     }
 
 public static void primeinrange(int n) {
-    for (int i = 2 ; i <= n-1; i++) {
+    for (int i = 2; i <= n-1; i++) {
     if (isprime(i)) {
         System.out.print(i + " ");
     }
+  }
 }
+
+public static void binToDec (int n) {
+   int bin = n;
+   int pow = 0;
+   int dec = 0;
+   while (n > 0) {
+     int lastdigit = n % 10 ;
+      dec = dec + (lastdigit * (int)Math.pow(2, pow));
+      pow++;
+      n /= 10;
+
+   }
+   System.out.print("the decimal of " + bin + " is: " + dec );
 }
+
  public static void main (String args[]) {
-   primeinrange(100);
- }
-    
+binToDec(101 );
+}   
 }
