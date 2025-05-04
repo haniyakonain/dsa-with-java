@@ -70,21 +70,35 @@ public static void primeinrange(int n) {
   }
 }
 
-public static void binToDec (int n) {
-   int bin = n;
-   int pow = 0;
-   int dec = 0;
-   while (n > 0) {
-     int lastdigit = n % 10 ;
-      dec = dec + (lastdigit * (int)Math.pow(2, pow));
-      pow++;
-      n /= 10;
+public static void binToDec(int n) {
+int bin = n;
+int pow = 0;
+int dec = 0;
+while (n > 0) {
+   int lastdigit = n % 10;
+   dec = dec + (lastdigit * (int)Math.pow(2, pow));
+   pow ++;
+   n /= 10;
+}
+System.out.println("the decimal of " + bin + " is : " + dec);
 
-   }
-   System.out.print("the decimal of " + bin + " is: " + dec );
+}
+
+public static void decToBin(int n){
+   int dec = n;
+   int pow = 0;
+   int bin = 0;
+   while(n > 0) {
+      int rem = n % 2;
+      bin = bin + ( rem * (int)Math.pow(10, pow));
+      pow ++;
+      n /= 2;
+   } 
+   System.out.println("the binary of " + dec + " is : " + bin);
 }
 
  public static void main (String args[]) {
 binToDec(101 );
+decToBin(5);
 }   
 }
