@@ -187,6 +187,23 @@ Syntax:
 condition ? expression_if_true : expression_if_false;
 ```
 
+to get the last digit
+number % 10
+
+to remove it
+number / 10
+
+functions / methods
+to create -
+block of code that performs a work when called
+return type name (){
+//body
+return statement
+}
+to call -
+name(); in main
+
+
 ---
 
 # Arrays in Java
