@@ -260,6 +260,7 @@ default
 
 # Arrays in Java
 ### What are Arrays?
+- 0 based indexing
 - Non-primitive data type
 - A data structure in general
 - Collection of items (elements)
@@ -269,10 +270,29 @@ default
 - Two types: **Static and Dynamic**
 - Java does not support dynamic arrays directly, but it provides **ArrayList** from `java.util` package
 
+  operations - 
+  create
+  input
+  output
+  update
+
 ### Memory Calculation:
 ```
 Memory = Size × Data Type
 ```
+
+### create an array:
+Initialize        declare
+dt arrayname[] = new dt[size];
+int marks[] = new int[50];
+int numbers [] = {1,2,3};
+new is a constructor
+
+arrys as argument
+1. pass value
+wont reflect on main
+2. reference
+will reflect in main
 
 ### Declaring an Array:
 ```java
