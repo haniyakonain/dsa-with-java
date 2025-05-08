@@ -194,6 +194,11 @@ to remove it
 number / 10
 
 functions / methods
+
+2 types
+user defined like factorial, sum
+inbuild like Math- pow, sqrt, max
+
 to create -
 block of code that performs a work when called
 return type name (){
@@ -202,6 +207,53 @@ return statement
 }
 to call -
 name(); in main
+
+syntax with parameters
+takes input
+return type name (type param1, type param2){
+//body
+return statement
+}
+2 tpes in it
+formal param -def
+actual param -call
+
+but in java we have call by value functions
+does not give original value but its copy
+
+function overloading-
+same name diif parameters
+ex-
+1. diff type of params like 
+mul (int a, int b)
+mul(long, long b)
+2. diff number of params
+div(int1)
+div(int1, int2)
+
+binary to decimal
+ld = n % 10
+dec = dec + ld * Math.pow(2, pow)
+pow++
+n/10
+
+decimal to binary
+ld = n % 2
+dec = dec + ld * Math.pow(2, pow)
+pow++
+n/2
+
+scope
+1. method scope
+function ke andar
+{
+// can use anywhere
+}
+2.block scope
+public
+private
+protected
+default
 
 
 ---
