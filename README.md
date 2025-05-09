@@ -187,74 +187,163 @@ Syntax:
 condition ? expression_if_true : expression_if_false;
 ```
 
-to get the last digit
-number % 10
+---
 
-to remove it
-number / 10
+# 📘 Java Functions & Concepts
 
-functions / methods
+## 🔢 Last Digit & Removing Digits
 
-2 types
-user defined like factorial, sum
-inbuild like Math- pow, sqrt, max
+* **Get Last Digit**:
 
-to create -
-block of code that performs a work when called
-return type name (){
-//body
-return statement
+  ```java
+  int lastDigit = number % 10;
+  ```
+
+* **Remove Last Digit** (truncate):
+
+  ```java
+  number = number / 10;
+  ```
+
+---
+
+## 🧩 Functions / Methods in Java
+
+### 📂 Types of Functions
+
+1. **User-defined Functions**
+   Functions created by the programmer, e.g., `factorial()`, `sum()`.
+
+2. **Built-in Functions**
+   Provided by Java libraries, e.g.:
+
+   ```java
+   Math.pow(base, exponent);
+   Math.sqrt(number);
+   Math.max(a, b);
+   ```
+
+---
+
+### ✏️ Creating a Function
+
+**Syntax (no parameters)**:
+
+```java
+returnType functionName() {
+    // body
+    return value;
 }
-to call -
-name(); in main
+```
 
-syntax with parameters
-takes input
-return type name (type param1, type param2){
-//body
-return statement
+**Calling the Function**:
+
+```java
+functionName(); // inside main
+```
+
+---
+
+### 📥 Function with Parameters
+
+**Syntax**:
+
+```java
+returnType functionName(type param1, type param2) {
+    // body
+    return value;
 }
-2 tpes in it
-formal param -def
-actual param -call
+```
 
-but in java we have call by value functions
-does not give original value but its copy
+* **Formal Parameters**: Parameters in the function definition
+* **Actual Parameters**: Arguments passed during the function call
 
-function overloading-
-same name diif parameters
-ex-
-1. diff type of params like 
-mul (int a, int b)
-mul(long, long b)
-2. diff number of params
-div(int1)
-div(int1, int2)
+> ☕ In Java, **Call by Value** is used:
+> The function receives a **copy** of the actual value, so the original variable is **not changed**.
 
-binary to decimal
-ld = n % 10
-dec = dec + ld * Math.pow(2, pow)
-pow++
-n/10
+---
 
-decimal to binary
-ld = n % 2
-dec = dec + ld * Math.pow(2, pow)
-pow++
-n/2
+## 🔁 Function Overloading
 
-scope
-1. method scope
-function ke andar
-{
-// can use anywhere
+Using the same function name with different parameters:
+
+### 📌 Examples:
+
+1. **Different Data Types**
+
+   ```java
+   void mul(int a, int b) { ... }
+   void mul(long a, long b) { ... }
+   ```
+
+2. **Different Number of Parameters**
+
+   ```java
+   void div(int a) { ... }
+   void div(int a, int b) { ... }
+   ```
+
+---
+
+## 🔄 Number Conversions
+
+### ⚙️ Binary to Decimal
+
+```java
+int n = binaryInput;
+int decimal = 0, power = 0;
+
+while(n > 0) {
+    int lastDigit = n % 10;
+    decimal += lastDigit * Math.pow(2, power);
+    power++;
+    n = n / 10;
 }
-2.block scope
-public
-private
-protected
-default
+```
 
+---
+
+### ⚙️ Decimal to Binary
+
+```java
+int n = decimalInput;
+String binary = "";
+
+while(n > 0) {
+    int rem = n % 2;
+    binary = rem + binary;
+    n = n / 2;
+}
+```
+
+---
+
+## 🧭 Scope in Java
+
+### 1. **Method Scope**
+
+Variables declared inside a method:
+
+```java
+void example() {
+    int x = 10; // Only accessible within this method
+}
+```
+
+### 2. **Block Scope**
+
+Variables declared inside blocks like loops, `if`, `while`, etc.
+
+---
+
+## 🔐 Access Modifiers (Visibility)
+
+| Modifier    | Visibility                                        |
+| ----------- | ------------------------------------------------- |
+| `public`    | Visible everywhere                                |
+| `private`   | Visible only within the same class                |
+| `protected` | Visible in the same package or subclasses         |
+| *(default)* | Visible only within the same package (no keyword) |
 
 ---
 
