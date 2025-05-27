@@ -584,7 +584,6 @@ Key -> Hash Function -> Bucket Index
   for (char c : str.toCharArray()) {
       freq.put(c, freq.getOrDefault(c, 0) + 1);
   }
-````
 
 * **Lookup Tables**
   Map keys to corresponding values for fast lookup.
@@ -603,9 +602,6 @@ Key -> Hash Function -> Bucket Index
   nameToIndex.put("Alice", 0);
   nameToIndex.put("Bob", 1);
   ```
-
-```
-``
 
 
 
