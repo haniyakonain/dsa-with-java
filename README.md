@@ -571,5 +571,41 @@ Key -> Hash Function -> Bucket Index
 
 ---
 
+## 📦 Common Use Cases of HashMap
+
+- **Caching (e.g., LRU Cache)**  
+  Quickly store and retrieve recently used data to optimize performance.
+
+- **Frequency Counting**  
+  Count occurrences of elements such as characters, words, or numbers.
+
+  ```java
+  HashMap<Character, Integer> freq = new HashMap<>();
+  for (char c : str.toCharArray()) {
+      freq.put(c, freq.getOrDefault(c, 0) + 1);
+  }
+````
+
+* **Lookup Tables**
+  Map keys to corresponding values for fast lookup.
+
+  ```java
+  HashMap<String, String> countryCode = new HashMap<>();
+  countryCode.put("IN", "India");
+  countryCode.put("US", "United States");
+  ```
+
+* **Indexing Data**
+  Associate objects or IDs with their index or location in a dataset.
+
+  ```java
+  HashMap<String, Integer> nameToIndex = new HashMap<>();
+  nameToIndex.put("Alice", 0);
+  nameToIndex.put("Bob", 1);
+  ```
+
+```
+``
+
 
 
