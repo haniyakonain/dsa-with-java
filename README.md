@@ -602,5 +602,3 @@ Key -> Hash Function -> Bucket Index
   nameToIndex.put("Alice", 0);
   nameToIndex.put("Bob", 1);
   ```
-
-
