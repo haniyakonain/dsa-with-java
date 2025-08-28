@@ -5,7 +5,7 @@ class Solution {
         HashMap<Integer, Integer> num_map = new HashMap<>();
         
         for(int i = 0; i < nums.length; i++) { 
-            int complement = target - nums[i];
+            int complement = target - nums[i];// logic- target - nums[i]
             
             if (num_map.containsKey(complement)) {
                 return new int[] {num_map.get(complement), i}; 
