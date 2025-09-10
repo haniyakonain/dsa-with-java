@@ -602,3 +602,13 @@ Key -> Hash Function -> Bucket Index
   nameToIndex.put("Alice", 0);
   nameToIndex.put("Bob", 1);
   ```
+
+  **Null Rules**
+- **1 null key** is allowed.  
+- **Many null values** are allowed.  
+
+**Order**
+- No fixed order of keys.  
+- If you want order, use:  
+  - **LinkedHashMap** → maintains insertion order  
+  - **TreeMap** → maintains sorted order  
