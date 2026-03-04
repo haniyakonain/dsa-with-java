@@ -20,7 +20,7 @@ public class shortestpath {
                 x++;
             }
         }
-        int X2= x*x , Y2 = y*y; // x² , y² 
-        return (float) Math.sqrt(X2 + Y2);
+        int X2= x*x , Y2 = y*y; // because one is (0,0) and other is not so not using (x2-x1) (y2 - y1) instead using x² + y² 
+        return (float) Math.sqrt(X2 + Y2);  
     }
 }
